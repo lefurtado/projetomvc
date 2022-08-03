@@ -1,5 +1,5 @@
 const home = (req, res) => {
-    res.send('minha rota');
+    res.render ('pages/pages');
 };
 
 const dogs = (req, res) => {
@@ -12,7 +12,7 @@ const fishes = (req, res) => {
 
 };
 
-module.exports = home;
-module.exports = dogs;
-module.exports = cats;
-module.exports = fishes;
+module.exports.home = home;
+module.exports.dogs = dogs;
+module.exports.cats = cats;
+module.exports.fishes = fishes;

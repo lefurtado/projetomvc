@@ -2,4 +2,4 @@ const search  = (req, res) => {
     // res.send('teste')
 }
 
-module.exports = search;
+module.exports.search = search;
