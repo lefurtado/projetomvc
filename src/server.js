@@ -22,5 +22,9 @@ server.engine('mustache', mustache());
 server.use(express.static(path.join(__dirname, '../public')));
 // usando a rota do mainRoutes importada
 server.use(mainRoutes);
+// criando a pagina 404
+server.use((req, res) => {
+    res.render('pages/404');
+});
 // escutando a porta do dotenv
 server.listen(process.env.PORT);
